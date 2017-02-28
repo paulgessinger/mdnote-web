@@ -254,7 +254,9 @@ app.use("/assets", async (req, res) => {
 //app.get("/", (req, res) => {
   //res.send("hallo");
 //});
-app.use(express.static('build'));
+const static_path = path.join(path.dirname(__dirname), 'build');
+//console.log(static_path);
+app.use(express.static(static_path));
 
 app.get("/*", (req, res) => {
   res.sendFile(path.join(path.dirname(__dirname), './build', 'index.html'));

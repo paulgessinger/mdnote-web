@@ -1,13 +1,14 @@
 {
-  "name": "log",
+  "name": "mdnote",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.9.0"
   },
   "homepage": ".",
-  { "engines" : { "node" : ">=7.0" } }
-  "files": ["build"]
+  "engines": {"node": ">=7.0"},
+  "files": ["./build"],
+  "bin" : { "mdnote" : "./src/server.js" },
   "dependencies": {
     "express": "^4.14.1",
     "express-fileupload": "^0.1.1",
