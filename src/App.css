@@ -1,0 +1,45 @@
+.App {
+  text-align: center;
+  display:flex;
+}
+
+.calendar {
+  flex:0;
+  width:300px;
+}
+
+.DayPicker {
+  outline:none;
+}
+.DayPicker-Day {
+  outline:none;
+}
+
+.drop {
+  margin:0 auto;
+  width:204px;
+  margin-top:20px;
+}
+
+.days {
+  flex:1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom:1px solid #ccc;
+  padding-bottom:0.2em;
+}
+
+hr {
+  border:0;
+  height:1px;
+  background:#ccc;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+.task-list {
+  list-style-type:none;
+  padding-left:0;
+  margin-left:0;
+}
